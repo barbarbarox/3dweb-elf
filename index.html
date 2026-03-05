@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aetheria — The Elf &amp; The Magic Sword</title>
+  <meta name="description" content="Discover the cinematic world of Aetheria — a fantasy story of an elf warrior wielding a legendary magic sword. Experience the tale through immersive scroll animation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <p class="loader-text">Entering Aetheria…</p>
+      <p class="loader-progress" id="loader-progress">0%</p>
+    </div>
+  </div>
+
+  <!-- Canvas Background -->
+  <canvas id="frame-canvas"></canvas>
+
+  <!-- Overlay Content -->
+  <div id="content">
+
+    <!-- Navbar -->
+    <nav id="navbar">
+      <a href="#" class="nav-brand">✦ Aetheria</a>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#features">Gallery</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section hero-section">
+      <div class="hero-content reveal">
+        <p class="hero-subtitle">⟡ A Cinematic Fantasy Experience ⟡</p>
+        <h1 class="hero-title">The Blade<br/><span class="glow-text">of Aetheria</span></h1>
+        <p class="hero-desc">
+          Scroll down to witness the awakening of an ancient elven warrior
+          and the legendary sword that chose her.
+        </p>
+        <a href="#story" class="cta-btn">Begin the Journey ↓</a>
+      </div>
+    </section>
+
+    <!-- Story Section -->
+    <section id="story" class="section story-section">
+      <div class="story-grid">
+        <div class="story-card reveal">
+          <span class="card-icon">🌙</span>
+          <h2>The Prophecy</h2>
+          <p>
+            In the twilight realm of Aetheria, an ancient prophecy foretold the rise of an elven warrior —
+            born under the twin moons, destined to wield a blade forged from starlight and shadow.
+            For centuries, the elves waited.
+          </p>
+        </div>
+        <div class="story-card reveal">
+          <span class="card-icon">⚔️</span>
+          <h2>The Awakening</h2>
+          <p>
+            When darkness crept across the Silverwood, the magic sword Lunaris began to glow for the first time
+            in a thousand years. It called out — not with sound, but with a pulse of pure arcane energy
+            that resonated through the soul of its chosen bearer.
+          </p>
+        </div>
+        <div class="story-card reveal">
+          <span class="card-icon">🧝‍♀️</span>
+          <h2>The Elf Warrior</h2>
+          <p>
+            Elysia, last of the Starborne, answered the call. With silver hair and eyes like molten amethyst,
+            she drew the blade from its crystal sheath. The forest erupted in light. The age of reclamation had begun.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features / Gallery Section -->
+    <section id="features" class="section features-section">
+      <div class="section-header reveal">
+        <h2 class="section-title">Legendary <span class="glow-text">Artifacts</span></h2>
+        <p class="section-subtitle">Relics of power scattered across the realm of Aetheria</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon">💎</div>
+          <h3>Crystal of Eternity</h3>
+          <p>A shard of pure time, frozen at the moment of creation. It grants visions of past and future.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">🗡️</div>
+          <h3>Lunaris Blade</h3>
+          <p>The legendary sword of starlight. It burns with cold fire and cuts through any enchantment.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">📜</div>
+          <h3>Scroll of Ancients</h3>
+          <p>Contains the forgotten spells of the First Elves. Only the worthy can decipher its runes.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">🛡️</div>
+          <h3>Aegis of Dawn</h3>
+          <p>A shield woven from the first rays of sunlight. It repels all darkness and shadow magic.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">🌿</div>
+          <h3>Heartwood Amulet</h3>
+          <p>Carved from the World Tree's core, it channels the life force of the entire Silverwood forest.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">⭐</div>
+          <h3>Starborn Crown</h3>
+          <p>The crown of the elven sovereigns, set with gems that hold captured starlight within.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+      <div class="footer-content">
+        <p class="footer-brand">✦ Aetheria</p>
+        <p class="footer-tagline">A cinematic fantasy experience crafted with scroll animation</p>
+        <div class="footer-links">
+          <a href="#hero">Home</a>
+          <a href="#story">Story</a>
+          <a href="#features">Gallery</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Aetheria. All realms reserved.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
